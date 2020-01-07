@@ -1,0 +1,31 @@
+{
+  "name": "gaussian-process",
+  "version": "0.0.1",
+  "description": "A JavaScript module for Gaussian processes",
+  "main": "src/gaussian-process.js",
+  "scripts": {
+    "build": "parcel build src/gaussian-process.js src/test.js",
+    "test": "node dist/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenstetzler/gaussian-process-js.git"
+  },
+  "keywords": [
+    "Gaussian",
+    "Process",
+    "Regression",
+    "Machine",
+    "Learning"
+  ],
+  "author": "Steven Stetzler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevenstetzler/gaussian-process-js/issues"
+  },
+  "homepage": "https://github.com/stevenstetzler/gaussian-process-js#readme",
+  "dependencies": {
+    "mathjs": "latest",
+    "multivariate-normal": "latest"
+  }
+}
