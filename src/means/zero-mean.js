@@ -1,8 +1,9 @@
-import * as math from "mathjs";
+var math = require("mathjs");
 
-export default class ZeroMean {
-    predict(testX) {
-      return math.resize(math.matrix(), testX._size, 0);
-    }
+class ZeroMean {
+  predict(testX) {
+    return math.resize(math.matrix(), testX._size, 0);
   }
+}
 
+module.exports.ZeroMean = ZeroMean;

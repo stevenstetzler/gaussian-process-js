@@ -1,5 +1,8 @@
-import { Kernels, Means, GaussianProcess } from "./gaussian-process";
-import * as math from "mathjs";
+var GP = require("./gaussian-process");
+var Kernels = GP.Kernels;
+var Means = GP.Means;
+var GaussianProcess = GP.GaussianProcess
+var math = require("mathjs");
 
 var gp = new GaussianProcess(new Means.ZeroMean(), new Kernels.SquaredExponentialKernel(1, 0.5));
 gp.fit(math.matrix([-2, 0, 2]), math.matrix([2, 4, 4]));

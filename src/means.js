@@ -1,3 +1,1 @@
-import ZeroMean from "./means/zero-mean";
-
-exports.ZeroMean = ZeroMean;
+module.exports.ZeroMean = require("./means/zero-mean").ZeroMean;

@@ -1,4 +1,4 @@
-export class BaseKernel {    
+class BaseKernel {    
     k(x, y) {
         throw "Kernel not implemented";
     }
@@ -9,3 +9,4 @@ export class BaseKernel {
     }
   }
 
+module.exports.BaseKernel = BaseKernel;
